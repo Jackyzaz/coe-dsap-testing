@@ -1,5 +1,6 @@
 from program.cat_and_mouse import cat_and_mouse
 import unittest
+from unittest.mock import patch
 
 CAT_A = "Cat A"
 CAT_B = "Cat B"
