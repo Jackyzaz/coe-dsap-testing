@@ -1,4 +1,4 @@
-def funnyString(string):
+def funny_string(string):
     ascii_string = list(map(ord, string))
     ascii_string_dif = []
     for i in range(1, len(ascii_string)):
