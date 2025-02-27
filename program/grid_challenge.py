@@ -1,4 +1,4 @@
-def gridChallenge(grid):
+def grid_challenge(grid):
     for i in range(len(grid)):
         grid[i] = "".join(sorted(grid[i]))
 
