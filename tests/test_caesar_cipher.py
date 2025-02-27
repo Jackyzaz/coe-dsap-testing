@@ -56,7 +56,7 @@ class CaesarCipherTest(unittest.TestCase):
     # case 6: weird case k = 0
     def test_give_unchanged_0_is_unchanged(self):
         # arrange
-        test_case = ["unchanged", 13]
+        test_case = ["unchanged", 0]
         expected_output = "unchanged"
         # act
         result = caesar_cipher(*test_case)
@@ -64,7 +64,7 @@ class CaesarCipherTest(unittest.TestCase):
         self.assertEqual(result, expected_output)
 
     # case 7: weird case k = 26 its will be same place
-    def test_give_unchanged_0_is_unchanged(self):
+    def test_give_same_25_is_same(self):
         # arrange
         test_case = ["same", 26]
         expected_output = "same"
@@ -78,6 +78,16 @@ class CaesarCipherTest(unittest.TestCase):
         # arrange
         test_case = ["HelloWorld", 13]
         expected_output = "UryybJbeyq"
+        # act
+        result = caesar_cipher(*test_case)
+        # assert
+        self.assertEqual(result, expected_output)
+
+    # case 9: Special Character
+    def test_give_special_13_is_special(self):
+        # arrange
+        test_case = ["$%!%$@", 13]
+        expected_output = "$%!%$@"
         # act
         result = caesar_cipher(*test_case)
         # assert
