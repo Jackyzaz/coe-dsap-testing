@@ -1,4 +1,4 @@
-def alternate(s):
+def two_characters(s):
     c = list(set(s))
     combination = []
     for i in range(len(c)):
