@@ -5,7 +5,7 @@ import unittest
 class CaesarCipherTest(unittest.TestCase):
     # case 1: min length and min k
     def test_give_a_1_is_b(self):
-        # arange
+        # arrange
         test_case = ["a", 1]
         expected_output = "b"
         # act
@@ -15,7 +15,7 @@ class CaesarCipherTest(unittest.TestCase):
 
     # case 2: above min by 1
     def test_give_ab_2_is_cd(self):
-        # arange
+        # arrange
         test_case = ["ab", 2]
         expected_output = "cd"
         # act
@@ -25,7 +25,7 @@ class CaesarCipherTest(unittest.TestCase):
 
     # case 3: Test average case without k rotate
     def test_give_hello_2_is_jgnnq(self):
-        # arange
+        # arrange
         test_case = ["hello", 2]
         expected_output = "jgnnq"
         # act
@@ -35,7 +35,7 @@ class CaesarCipherTest(unittest.TestCase):
 
     # case 4: Test average case with k rotate
     def test_give_hello_13_is_uryyb(self):
-        # arange
+        # arrange
         expected_output = "uryyb"
         test_case = ["hello", 13]
         # act
@@ -45,7 +45,7 @@ class CaesarCipherTest(unittest.TestCase):
 
     # case 5: Max case
     def test_give_abcdefghijklmnopqrstuvwxyz_13_is_nopqrstuvwxyzabcdefghijklm(self):
-        # arange
+        # arrange
         test_case = ["abcdefghijklmnopqrstuvwxyz", 13]
         expected_output = "nopqrstuvwxyzabcdefghijklm"
         # act
@@ -55,7 +55,7 @@ class CaesarCipherTest(unittest.TestCase):
 
     # case 6: weird case k = 0
     def test_give_unchanged_0_is_unchanged(self):
-        # arange
+        # arrange
         test_case = ["unchanged", 13]
         expected_output = "unchanged"
         # act
@@ -65,7 +65,7 @@ class CaesarCipherTest(unittest.TestCase):
 
     # case 7: weird case k = 26 its will be same place
     def test_give_unchanged_0_is_unchanged(self):
-        # arange
+        # arrange
         test_case = ["same", 26]
         expected_output = "same"
         # act
@@ -75,7 +75,7 @@ class CaesarCipherTest(unittest.TestCase):
 
     # case 8: Mixed and Upper and Lower
     def test_give_HelloWorld_13_is_UryybJbeyq(self):
-        # arange
+        # arrange
         test_case = ["HelloWorld", 13]
         expected_output = "UryybJbeyq"
         # act
