@@ -1,4 +1,4 @@
-def caesarCipher(string, k):
+def caesar_cipher(string, k):
     umap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     lmap = "abcdefghijklmnopqrstuvwxyz"
     new_string = ""
