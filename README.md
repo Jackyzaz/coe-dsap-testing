@@ -1,4 +1,16 @@
-# Getting Start
+# Unittest with python
+by Soravit Sukkarn Student ID: 6710110428
+
+Assignment from **Data structure Algorithm and Programming module (240-123)**
+
+
+## Coverage Test Result
+
+![image](https://github.com/user-attachments/assets/82ecc4dc-de29-41f7-9b9f-1e171999fea7)
+
+
+
+## Getting Start
 
 ```sh
 python -m venv venv
@@ -26,7 +38,7 @@ pip install -r requirements.txt
 
 <br/>
 
-# Run Test
+## Run Test
 
 ### Run a unit test
 
